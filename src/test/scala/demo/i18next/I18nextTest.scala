@@ -1,12 +1,8 @@
 package demo.i18next
 
-import slinky.core
-import org.scalajs.dom.raw.{Blob, BlobPropertyBag}
 import org.scalatest.funsuite.AnyFunSuite
 import vision.id.i18next.facade.reactI18next.components._
 import vision.id.i18next.facade.reactI18next.mod.{Namespace, useTranslation}
-
-import scala.scalajs.js
 
 class I18nextTest extends AnyFunSuite {
 
