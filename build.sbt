@@ -28,8 +28,6 @@ scalaJSLinkerConfig ~= (_.withSourceMap(false))
 // because npm is slow
 useYarn := true
 
-stExperimentalEnableImplicitOps := true
-
 // say we want custom code for slinky
 stFlavour := Flavour.SlinkyNative
 
