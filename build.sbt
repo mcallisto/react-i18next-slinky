@@ -3,13 +3,14 @@ enablePlugins(ScalablyTypedConverterGenSourcePlugin)
 
 scalaVersion := "2.13.2"
 name := "react-i18next-slinky"
-version := "0.1.3"
+version := "0.1.4"
 
 /* javascript / typescript deps */
 Compile / npmDependencies ++= Seq(
-  "@types/react" -> "16.9.34",
-  "@types/react-dom" -> "16.9.6",
+  "@types/react" -> "16.9.42",
+  "@types/react-dom" -> "16.9.8",
   "i18next" -> "19.5.2",
+  "i18next-browser-languagedetector" -> "5.0.0",
   "react-i18next" -> "11.7.0"
 )
 
@@ -32,7 +33,7 @@ useYarn := true
 stFlavour := Flavour.SlinkyNative
 
 // focus only on these libraries
-stMinimize := Selection.AllExcept("i18next", "react-i18next")
+stMinimize := Selection.AllExcept("i18next", "i18next-browser-languagedetector", "react-i18next")
 
 // shade into another package
 stOutputPackage := "vision.id.i18next.facade"
