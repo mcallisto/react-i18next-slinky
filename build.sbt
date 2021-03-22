@@ -38,7 +38,7 @@ stMinimize := Selection.AllExcept("i18next", "i18next-browser-languagedetector",
 // shade into another package
 stOutputPackage := "vision.id.i18next.facade"
 
-ThisBuild / organization := "vision.id.react-i18next-slinky"
+ThisBuild / organization := "vision.id"
 ThisBuild / organizationName := "vision.id"
 ThisBuild / organizationHomepage := Some(url("http://id.vision/"))
 
@@ -69,22 +69,3 @@ ThisBuild / publishTo := {
   else Some("releases" at nexus + "service/local/staging/deploy/maven2")
 }
 ThisBuild / publishMavenStyle := true
-
-//publishMavenStyle := true
-//homepage := Some(new URL("https://github.com/mcallisto/react-i18next-slinky"))
-//startYear := Some(2020)
-//pomExtra := (
-//  <scm>
-//    <connection>scm:git:github.com:/mcallisto/react-i18next-slinky</connection>
-//    <developerConnection>scm:git:git@github.com:mcallisto/react-i18next-slinky.git</developerConnection>
-//    <url>github.com:mcallisto/react-i18next-slinky.git</url>
-//  </scm>
-//    <developers>
-//      <developer>
-//        <id>mcallisto</id>
-//        <name>Mario Càllisto</name>
-//      </developer>
-//    </developers>
-//  )
-//licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
-//bintrayRepository := "libs"
